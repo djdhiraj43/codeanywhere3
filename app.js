@@ -10,7 +10,7 @@ const commentsRoutes = require("./routes/comments");
 
 const app = express();
 
-mongoose.connect("mongodb+srv://admin:"+ process.env.MONGO_ATLAS_PW +"@cluster0-h5lhb.mongodb.net/node-angular?retryWrites=true", { useNewUrlParser: true })
+mongoose.connect("mongodb://admin:"+ process.env.MONGO_ATLAS_PW +"@ds351807.mlab.com:51807/node-angular?retryWrites=true", { useNewUrlParser: true })
   .then(() => {
     console.log("Connected to the database!");
   })
